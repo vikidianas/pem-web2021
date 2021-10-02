@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulir Pengisian</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;}
+            
+        /* Style the header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-bottom: 3px solid rgba(255, 123, 0, 0.897);
+            width: 800px;
+            margin: auto;
+        }
+
+        /*Style H*/
+        h1 {
+            font-family: 'Gill Sans', sans-serif;
+            color: rgba(247, 157, 74, 0.897);
+            text-shadow: 2px 2px 5px black, 2px 2px 2px black, 2px 2px 25px black, 0 0 5px black;
+        }
+    
+        h2{
+            font-family: Arial;
+        }
+
+        p{
+            font-family: fantasy;
+        }
+
+        /*Background Form Pengisian*/
+        .container{
+            margin: auto;
+            padding: 0px 30px;
+            width: 500px;
+            height: 690px;
+            background-color: rgba(255,255,245,.2);  
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(238, 152, 71, 0.897);
+        }
+
+        /*Judul Formulir*/
+        .container h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-transform: uppercase;
+            border-bottom: 3px solid rgba(255, 123, 0, 0.897);
+        }
+        
+        /*Kolom Input*/
+        .container form input{
+            border: none;
+            padding: 5px;
+            background-color: transparent;
+            border-bottom: 2px solid rgba(255, 123, 0, 0.897);
+            color: black;
+            font-family: Times New Roman;
+        }
+        .container form textarea{
+            border: 3;
+            border-color: rgba(255, 123, 0, 0.897);
+            border-radius: 5px;
+            background-color: transparent;
+            border-bottom: 2px solid rgba(255, 123, 0, 0.897);
+            color: black;
+        }
+
+        /*Tombol Select*/
+        .container form select{
+            width: 100%;
+            padding: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color:rgba(255, 123, 0, 0.897);
+            font-size: 12px;
+            text-align: center;
+            color: black;
+        }
+
+        /*Tombol submit*/
+        .container form button{
+            width: 100%;
+            padding: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background-color:rgba(255, 123, 0, 0.897);
+            font-size: 18px;
+            color: black;
+        }
+
+        .container form button:hover {
+            background-color: rgba(255, 123, 0, 0.897);
+        }
+
+        footer{
+            background-color: rgba(255, 123, 0, 0.897);
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <body background="begron.jpeg">
+        <div class="header">
+            <h1>FORMULIR PENDAFTARAN</h1>
+            <p><b>Silahkan Isi Formulir Dibawah Ini<b></p>
+        </div>
+        <br>
+        <div class="container">
+        <br>
+        <h2>Formulir Pendaftaran</h2>
+        <form action="proses.php" method="POST">
+            <tr><td>Nama Lengkap</td><td>:<input type="text" name="nama_lengkap" size="55"></td></tr>
+                <tr><td>Alamat</td><td>:<input type="text" name="alamat" size="55"></td></tr>
+                <tr><td>Nomor HP</td><td>:<input type="text" name="alamat" size="55"></td></tr>
+                <tr><td>Email</td><td>:<input type="email" name="email" size="55"></td></tr>
+                <tr><td>Sosial Media</td><td>:<br> <input type="checkbox" name="facebook" value="Ya"> Facebook <input type="checkbox" name="twitter" value="Ya"> Twitter <input type="checkbox" name="instagram" value="Ya"> Instagram <input type="checkbox" name="path" value="Ya"> Path</td></tr><br><br>
+                <tr><td>Mengetahui dari</td><td>:<br><select name="tahu">
+                    <option selected="select">-==========Pilih==========-</option>
+                    <option value="surat_kabar">Surat Kabar</option>
+                    <option value="media_sosial">Media Sosial</option>
+                    <option value="teman">Teman</option>
+                </select></td></tr><br><br>
+                <tr><td>Pesan</td><td>:</td></tr>
+                <tr><td></td><td><textarea name="pesan" cols="50" rows="5"></textarea><br><br>
+                    <button type="submit" name="submit" value="submit"><font face="Times New Roman">Submit</font></button><br><br>
+                    <button type="reset" name="reset" value="reset"><font face="Times New Roman">Reset</font></button><br><br>
+        </form>
+        </div>
+        <br>
+        <br>
+        <footer>
+            Copyright &copy; Viki Diana Susanti &#128151
+        </footer><br><br>
+    </body>
+</html>
